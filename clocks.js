@@ -1,6 +1,6 @@
 function displayTime() {
 					//document.getElementById('digit-clock').innerHTML="Current time: "+ new Date();
-					$("#digit-clock").html="Current time: "+ new Date();
+					$("#digit-clock").html("Current time: "+ new Date());
 				}
 				setInterval(displayTime,500);
 
