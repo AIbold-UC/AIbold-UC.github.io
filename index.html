@@ -97,13 +97,17 @@
 		<script>
 
 				function setCookie(){
-					if(document.cookie.indexOf("username")<0){
-						alert('no cookie');
-						document.cookie="username=Oreo";
+					if(document.cookie.indexOf("lastVisit")<0){
+						alert('Welcome to my homepage for the first time!');
+						const lastVisit= new Date();
+						document.cookie="username=Oreo; lastVisit="+lastVisit.toUTCString();
 
 					}
 					else{
-						alert("cookie: "+document.cookie);
+						const lastVisit= getCookie("lastVisit");
+						alert("Welcome back! your last visit was "+lastVisit);
+						const newlastVisit = new Date();
+						document.cookie="username=Oreo; lastVisit="+newlastVisit.toUTCString();
 					}
 				}
 				setCookie();
