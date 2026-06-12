@@ -21,7 +21,7 @@ function comicAPI(){
 							if (comicResult.length==0) return;
 							
 							console.log("from comicAPI: "+JSON.stringify(comicResult));
-							$("#comicText").text(comicResult.alt);
+							$("#comicText").text("alternate text: " +comicResult.alt);
 							$("#comicImg").attr("src", comicResult.img);
 						})
 
