@@ -2,7 +2,11 @@ function displayTime() {
 					//document.getElementById('digit-clock').innerHTML="Current time: "+ new Date();
 					$("#digit-clock").html("Current time: "+ new Date());
 				}
-				setInterval(displayTime,500);
+				$(function () {
+					displayTime();
+					setInterval(displayTime,500);
+});
+				
 
 
 var canvas=document.getElementById("analog-clock");
