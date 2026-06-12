@@ -11,5 +11,5 @@ function jokeAPI(){
 						})
 
 }
-
-setInterval(jokeAPI,60000)
+jokeAPI();
+setInterval(jokeAPI,60000);
