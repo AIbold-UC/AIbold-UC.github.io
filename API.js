@@ -7,7 +7,7 @@ function jokeAPI(){
 							if (result.length==0) return;
 							
 							console.log("from jokeAPI: "+JSON.stringify(result));
-							//$("#jokeResponse").text("a joke of the day: "+ result.joke);
+							$("#jokeResponse").text("a joke of the day: "+ result.joke);
 						})
 
 }
