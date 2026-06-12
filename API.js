@@ -2,7 +2,7 @@
 
 function jokeAPI(){
 
-	$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+	$.get("https://v2.jokeapi.dev/joke/Any?type=single?nsfw=false",
 						function (result) {
 							if (result.length==0) return;
 							
