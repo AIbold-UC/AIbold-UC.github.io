@@ -9,7 +9,7 @@ function displayTime() {
 				
 
 
-var canvas=document.getElementById("analog-clock");
+var canvas=$("#analog-clock");
 				var ctx= canvas.getContext( "2d")
 				var radius=canvas.height / 2;
 				ctx.translate(radius,radius);
