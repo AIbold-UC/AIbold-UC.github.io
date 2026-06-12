@@ -19,7 +19,7 @@ $(function () {
 //given that this was a provided api, and it seems to lead to the same comic each time, im gonna assume I don't need to randomize
 function comicAPI(){
 
-	$.get(https://xkcd.vercel.app/?comic=latest,
+	$.get("https://xkcd.vercel.app/?comic=latest",
 						function (result) {
 							if (result.length==0) return;
 							
