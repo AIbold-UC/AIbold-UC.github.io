@@ -24,7 +24,7 @@ function comicAPI(){
 							if (result.length==0) return;
 							
 							console.log("from comicAPI: "+JSON.stringify(result));
-							$("#comicText").text("a joke of the day: "+ result.alt);
+							$("#comicText").text("comic alt text: "+ result.alt);
 							$("#comicImg").attr("src", result.img);
 						})
 
