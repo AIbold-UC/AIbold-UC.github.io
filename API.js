@@ -17,12 +17,12 @@ function jokeAPI(){
 function comicAPI(){
 
 	$.get("https://xkcd.vercel.app/?comic=latest",
-						function (result) {
-							if (result.length==0) return;
+						function (comicResult) {
+							if (comicResult.length==0) return;
 							
-							console.log("from comicAPI: "+JSON.stringify(result));
-							$("#comicText").text(result.alt);
-							$("#comicImg").attr("src", result.img);
+							console.log("from comicAPI: "+JSON.stringify(comicResult));
+							$("#comicText").text(comicResult.alt);
+							$("#comicImg").attr("src", comicResult.img);
 						})
 
 }
