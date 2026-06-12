@@ -8,7 +8,8 @@ function displayTime() {
 });
 				
 
-
+//since most of the code is imported for this function, there wasn't a ton for me to change to make it jQuery
+var canvas=document.getElementById("analog-clock");
 var canvas=$("#analog-clock");
 				var ctx= canvas.getContext( "2d")
 				var radius=canvas.height / 2;

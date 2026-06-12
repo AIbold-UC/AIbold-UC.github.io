@@ -2,11 +2,14 @@
 var shown=false;
 function showhideEmail(){
 	if(shown){
-		document.getElementById('email').innerHTML = "Show my email";
+		$("#email").html("Show my email");
+		//document.getElementById('email').innerHTML = "Show my email";
 		shown=false;
 	}else{
 		var myemail="<a href='mailto:iboldam@mail.uc.edu'> iboldam@mail.uc.edu </a>";
-		document.getElementById('email').innerHTML = myemail;
+		$("#email").html(myemail);
+
+		//document.getElementById('email').innerHTML = myemail;
 		shown=true;
 	}
 
