@@ -11,10 +11,7 @@ function jokeAPI(){
 						})
 
 }
-$(function () {
-    jokeAPI();                 //for initial setup
-    setInterval(jokeAPI, 60000); 
-});
+
 
 //given that this was a provided api, and it seems to lead to the same comic each time, im gonna assume I don't need to randomize
 function comicAPI(){
@@ -30,5 +27,8 @@ function comicAPI(){
 
 }
 $(function () {
-    comicAPI();                  
+	jokeAPI();                 //for initial setup
+	comicAPI();
+    setInterval(jokeAPI, 60000);
+                      
 });
