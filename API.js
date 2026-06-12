@@ -11,5 +11,7 @@ function jokeAPI(){
 						})
 
 }
-jokeAPI();
-setInterval(jokeAPI,60000);
+$(function () {
+    jokeAPI();                 //for initial setup
+    setInterval(jokeAPI, 60000); 
+});
