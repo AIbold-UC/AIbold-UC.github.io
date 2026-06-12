@@ -2,7 +2,7 @@
 
 function jokeAPI(){
 
-	$.get("https://v2.jokeapi.dev/joke/Any?type=single?nsfw=false",
+	$.get("https://v2.jokeapi.dev/joke/Any?type=single?nsfw=false?racist=false",
 						function (result) {
 							if (result.length==0) return;
 							
@@ -25,7 +25,7 @@ function comicAPI(){
 							
 							console.log("from comicAPI: "+JSON.stringify(result));
 							$("#comicText").text("a joke of the day: "+ result.alt);
-							$("#comicImage").attr("src", result.img);
+							$("#comicImg").attr("src", result.img);
 						})
 
 }
